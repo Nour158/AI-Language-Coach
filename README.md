@@ -380,14 +380,7 @@ evaluate_session(conversation_history)
 -   [ ] Frontend/backend integration completed
 -   [ ] Final end-to-end demo completed
 
-## Team Members
 
-  Member
-  ------------------
-  Nourallah Ghonim
-  Mariam Eladawy
-  Zeyna Nader
-  Jalsim Mohamed
 
 ## License
 
