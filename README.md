@@ -1,23 +1,15 @@
 # AI Language Coach
 
-```{=html}
 <p align="center">
-```
-`<img src="assets/ai-language-coach-brand.png" alt="AI Language Coach Brand" width="850">`{=html}
-```{=html}
+  <img src="assets/ai-language-coach-brand.png" alt="AI Language Coach" width="850">
 </p>
-```
-```{=html}
+
 <p align="center">
-```
-`<strong>`{=html}Practice. Get Feedback. Improve.`</strong>`{=html}
-```{=html}
+  <strong>Practice. Get Feedback. Improve.</strong>
 </p>
-```
-AI Language Coach is a graduation project combining **Generative AI,
-NLP, Retrieval-Augmented Generation (RAG), Speech-to-Text, fine-tuning,
-and model optimization** to create a personalized English
-conversation-learning experience.
+
+AI Language Coach is a graduation project combining **Generative AI, NLP, Retrieval-Augmented Generation (RAG), Speech-to-Text, fine-tuning, and model optimization** to create a personalized English conversation-learning experience.
+
 
 Learners practice through natural, open-ended conversations by **text or
 voice**. Instead of interrupting every sentence with corrections, the
