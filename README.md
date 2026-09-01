@@ -1,7 +1,7 @@
 # AI Language Coach
 
 <p align="center">
-  <img src="assets/ai-language-coach-brand.png" alt="AI Language Coach" width="850">
+  <img src="assets/ai-language-coach-brand1.png" alt="AI Language Coach" width="850">
 </p>
 
 <p align="center">
