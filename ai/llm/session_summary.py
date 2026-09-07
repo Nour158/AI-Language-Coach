@@ -72,3 +72,6 @@ Return only the updated summary.
         )
 
         return summary.strip()
+
+# Backward-compatible name used by existing tests/integration
+SessionSummarizer = SessionSummaryGenerator
