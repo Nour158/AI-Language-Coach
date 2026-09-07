@@ -1,69 +1,28 @@
-from typing import List
+from typing import List, Any
 
-from backend.schemas.chat import Message
+from ai.assessment.session_evaluator import evaluate_session
 
 
-def evaluate_session(history: List[Message]) -> dict:
+class AssessmentService:
     """
-    Temporary Role 2 integration point.
-
-    Replace this mock implementation later with:
-        evaluate_session(conversation_history)
-
-    Keep the returned keys stable so React does not need to change.
+    Backend service wrapper around the real Role 2 assessment pipeline.
     """
-    learner_messages = [m.content for m in history if m.role == "user"]
 
-    if not learner_messages:
-        return {
-            "overall_score": 0,
-            "cefr_level": None,
-            "scores": {
-                "grammar": 0,
-                "vocabulary": 0,
-                "fluency": 0,
-                "coherence": 0,
-                "sentence_structure": 0,
-            },
-            "strengths": [],
-            "weaknesses": ["No learner messages were available to assess."],
-            "mistakes": [],
-            "repeated_patterns": [],
-            "exercises": [],
-            "source": "mock",
-        }
+    def evaluate(self, conversation_history: List[Any]) -> dict:
+        """
+        Evaluate a completed learner conversation.
 
-    return {
-        "overall_score": 78,
-        "cefr_level": None,
-        "scores": {
-            "grammar": 75,
-            "vocabulary": 82,
-            "fluency": 78,
-            "coherence": 80,
-            "sentence_structure": 76,
-        },
-        "strengths": [
-            "Good participation in the conversation.",
-            "Ideas are generally easy to understand."
-        ],
-        "weaknesses": [
-            "Past-tense consistency may need more practice."
-        ],
-        "mistakes": [
-            {
-                "original": "Yesterday I go to university.",
-                "corrected": "Yesterday I went to university.",
-                "natural_alternative": "I went to university yesterday.",
-                "category": "Grammar",
-                "explanation": "Use the past tense for a completed action in the past."
-            }
-        ],
-        "repeated_patterns": [
-            "Possible tense inconsistency"
-        ],
-        "exercises": [
-            "Write 5 sentences about what you did yesterday using past-tense verbs."
-        ],
-        "source": "mock",
-    }
+        Parameters
+        ----------
+        conversation_history:
+            Conversation messages passed from the backend/session layer.
+
+        Returns
+        -------
+        dict
+            Structured learner assessment report.
+        """
+        return evaluate_session(conversation_history)
+
+
+assessment_service = AssessmentService()
