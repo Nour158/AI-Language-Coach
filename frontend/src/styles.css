@@ -1882,3 +1882,30 @@ textarea {
   background: radial-gradient(circle at top left, #fff2f3 0%, transparent 38%),
               linear-gradient(135deg, #fffaf8 0%, #f4efeb 100%);
 }
+
+.home-card {
+  position: relative;
+}
+
+.home-logo {
+  position: absolute;
+
+  top: 45px;
+  right: 55px;
+
+  width: 300px;
+  max-width: 32%;
+  height: auto;
+
+  object-fit: contain;
+}
+
+@media (max-width: 800px) {
+  .home-logo {
+    position: static;
+    display: block;
+    width: 240px;
+    max-width: 80%;
+    margin: 0 auto 24px;
+  }
+}
