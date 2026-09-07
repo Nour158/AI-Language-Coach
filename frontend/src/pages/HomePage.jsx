@@ -1,5 +1,5 @@
 import React from "react";
-
+import logo from "../assets/logo.png";
 export default function HomePage({
   onStart,
   onHistory,
@@ -8,11 +8,15 @@ export default function HomePage({
     <div className="page">
       <div className="container">
         <div className="home-card">
-
+          <img
+           src={logo}
+           alt="AI Language Coach"
+           className="home-logo"
+          />
           <div className="home-badge">
             AI-Powered English Practice
           </div>
-
+             
           <h1 className="home-title">
             Speak Better.
             <br />
