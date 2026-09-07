@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/ai-language-coach-logo.png" alt="AI Language Coach Logo" width="220"/>
+  <img src="assets/ai-language-coach-brand" alt="AI Language Coach Logo" width="220"/>
 </p>
 
 <h1 align="center">AI Language Coach</h1>
